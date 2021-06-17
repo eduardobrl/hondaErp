@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using hondaerp.Supliers.Models;
 using hondaerp.Dealerships.Models;
+using hondaerp.Products.Models;
 
 namespace hondaerp.Data
 {
@@ -24,5 +25,6 @@ namespace hondaerp.Data
 
         public DbSet<Suplier> Suplier { get; set; }
         public DbSet<Dealership> Dealership { get; set; }
+        public DbSet<Product> Product { get; set; }
     }
 }

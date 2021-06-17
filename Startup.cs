@@ -19,6 +19,7 @@ using hondaerp.Data;
 using hondaerp.Supliers.Repositories;
 using Newtonsoft.Json.Serialization;
 using hondaerp.Dealerships.Repositories;
+using hondaerp.Products.Repositories;
 
 namespace hondaerp
 {
@@ -51,6 +52,8 @@ namespace hondaerp
             services.AddScoped<SuplierRepository>();
 
             services.AddScoped<DealershipsRepository>();
+
+            services.AddScoped<ProductRepository>();
             
             services.AddDbContext<ApplicationDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("ApplicationDbContext")));
